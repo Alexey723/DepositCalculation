@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Промежуточная аттестация "Калькулятор вкладов"</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <div class="head">
+      <h1>Калькулятор вкладов для вычисления доходности</h1>
+    </div>
+   <div class="main">
+    <div class="form">
+      <p class="text1">Введите данные для расчёта:</p>
+      <label>
+        <input type="radio" name="choose" onclick="visibleMenu()" checked>Без капитализации<br>
+        <input type="radio" name="choose" onclick="visibleMenu()">С капитализацией
+      </label>
+      <p><label>Сумма вклада: 
+       <input type="number" id="valueOfSum" value="10000" step="1000" min="10000" max="100000000" onchange="changeRange(), calculation()">руб.
+      </label>
+      </p>
+      <p><input type="range" id="rangeOfSum" min = "10000" max="100000000" step="1000" value="10000" onchange="calculation()"></p>
+      <p><label>Годовая ставка по вкладу: <input type="number" min="0" id="rate"></label></p>
+      <p id="daysOfDeposite"><label>Срок размещения вклада(в днях): <input type="number" min="0" id="timeOfDeposite1"></label></p>
+      <p id="monthsOfDeposite"><label>Срок размещения вклада(в месяцах, мин. 2): <input type="number" min="2" id="timeOfDeposite2"></label></p>
+      <div>
+        <button onclick="calculation()">Рассчитать</button>
+      </div>
+    </div>
+    <div id="total"> 
+    </div>
+   </div>
+    <script src="Script/script.js"></script>
+  </body>
+</html>

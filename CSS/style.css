@@ -1,0 +1,91 @@
+body{
+    background-image: url("../background.jpg");
+}
+.head {
+background-color: rgba(0, 0, 0, 0.767);
+border-radius: 10px;
+width: 90%;
+height: 150px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.head h1{
+    color: aliceblue;
+    font-size:3vw;
+}
+.text1{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.main{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.form{
+    margin: 0 auto;
+    padding-left: 15px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 10px;
+    height: 500px;
+    float: left;
+    color: bisque;
+}
+.form label{
+    font-size: 16pt;
+}
+.form button{
+    width: 50%;
+    height: 50px;
+    background-color: rgb(108, 216, 144);
+    border-radius: 10px;
+    font-size: 25pt;
+    color: rgb(26, 22, 1);
+    font-weight: bold;
+}
+.form button:hover{
+    width: 50%;
+    background-color: rgb(201, 247, 0);
+    border-radius: 10px;
+    font-size: 25pt;
+    color: green;
+    font-weight: bold;
+    box-shadow: 0 0 15px rebeccapurple;
+}
+.form div{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+#rate, #timeOfDeposite1, #timeOfDeposite2{
+    font-size: 16pt;
+    width: 100px;
+}
+#total{
+    height: 500px;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 35pt;
+    font-weight: bold;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+}
+#rangeOfSum{
+    width: 50%;
+}
+#valueOfSum{
+    font-size: 16pt;
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: bisque;
+}
+#daysOfDeposite{
+    display: inline;
+}
+#monthsOfDeposite{
+    display: none;
+}
